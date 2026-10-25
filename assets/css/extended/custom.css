@@ -1,0 +1,71 @@
+/* Portfolio overrides — works with PaperMod */
+
+.card-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  margin-top: 1.5rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.15rem;
+  background: var(--entry);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.card .meta {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 0.35rem;
+}
+
+.work-card details {
+  margin-top: 0.5rem;
+}
+
+.work-card summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+.blog-filters button {
+  font: inherit;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: inherit;
+  cursor: pointer;
+}
+
+.blog-filters button[aria-pressed="true"] {
+  border-color: var(--primary);
+  font-weight: 600;
+}
+
+.blog-card.is-hidden {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .blog-card {
+    transition: opacity 0.15s ease;
+  }
+  .blog-card.is-hidden {
+    display: none;
+  }
+}
