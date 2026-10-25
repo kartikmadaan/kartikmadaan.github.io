@@ -1,0 +1,83 @@
+baseURL = "https://kartikmadaan.github.io/"
+locale = "en-us"
+title = "Kartik Madaan"
+theme = "PaperMod"
+enableRobotsTXT = true
+mainSections = []
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  description = "Systems engineer. Disaster recovery, databases, Go, and AI-assisted workflows."
+  author = "Kartik Madaan"
+  defaultTheme = "auto"
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  disableThemeToggle = false
+  favicon = "/favicon.svg"
+  images = ["/images/og.svg"]
+  # Analytics: add GoatCounter or Plausible partial here when you have a site id.
+  # Do not load third-party analytics without a real id.
+
+[params.homeInfoParams]
+  Title = "Kartik Madaan"
+  Content = "Systems engineer working on disaster recovery and distributed systems. Learning Go. Interested in database internals and making AI agents follow real engineering rules."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/kartikmadaan"
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/kartik-madaan-866338139/"
+[[params.socialIcons]]
+  name = "medium"
+  url = "https://medium.com/@kmadaan12"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "About"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "what-i-do"
+    name = "What I do"
+    url = "/what-i-do/"
+    weight = 2
+  [[menu.main]]
+    identifier = "daily-drivers"
+    name = "Daily drivers"
+    url = "/daily-drivers/"
+    weight = 3
+  [[menu.main]]
+    identifier = "til"
+    name = "TIL"
+    url = "/til/"
+    weight = 4
+  [[menu.main]]
+    identifier = "now"
+    name = "Now"
+    url = "/now/"
+    weight = 5
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 6
+  [[menu.main]]
+    identifier = "recommendations"
+    name = "Recommendations"
+    url = "/recommendations/"
+    weight = 7
