@@ -1,6 +1,6 @@
 ---
 title: "Today I learnt"
-summary: "Short notes when something clicks — nothing here yet."
+summary: "Short, sharp notes on systems, tooling, and things that clicked while building."
 ---
 
-TIL posts will show up here as card summaries. Empty for now.
+Short field notes when something clicks. No fluff.
